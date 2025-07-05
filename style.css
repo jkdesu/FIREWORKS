@@ -6,10 +6,10 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: black;
   background-image:
-    radial-gradient(circle, #99df7c 45px, transparent 41px),
-    radial-gradient(circle, #F4E74C 35px, transparent 41px),
-    radial-gradient(circle, #466dc3 35px, transparent 41px),
-    radial-gradient(circle, #e970d4 45px, transparent 41px);
+    radial-gradient(circle, #FF3CAC 45px, transparent 41px),
+    radial-gradient(circle, #FFDE59 35px, transparent 41px),
+    radial-gradient(circle, #2F52E0 35px, transparent 41px),
+    radial-gradient(circle, #39FF14 45px, transparent 41px);
   background-size: 160px 160px;
   background-position: 0 0, 80px 0, 0 80px, 80px 80px;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   align-items: center; /* vertically center all content */
   padding: 16px 40px;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(243, 31, 165, 0.25);
   backdrop-filter: blur(8px);
   font-family: 'Bangers', cursive;
   color: white;
@@ -137,7 +137,7 @@ main {
 .project-title span:nth-child(6) { color: #74B9FF; }   /* O - Sky Blue */
 .project-title span:nth-child(7) { color: #FFEAA7; }   /* D - Lemon Cream */
 .project-title span:nth-child(8) { color: #E84393; }   /* I - Raspberry Pink */
-.project-title span:nth-child(9) { color: #55EFC4; }   /* N - Mint Green */
+.project-title span:nth-child(9) { color: #FFFFFF; }   /* N - WHITE */
 .project-title span:nth-child(10){ color: #FD79A8; }   /* G - Bubblegum Pink */
 
 
