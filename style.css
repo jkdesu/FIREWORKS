@@ -1,9 +1,171 @@
-body, html {
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600&display=swap');
+
+body {
   margin: 0;
-  overflow: hidden;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  background-image:
+    radial-gradient(circle, #99df7c 45px, transparent 41px),
+    radial-gradient(circle, #F4E74C 35px, transparent 41px),
+    radial-gradient(circle, #466dc3 35px, transparent 41px),
+    radial-gradient(circle, #e970d4 45px, transparent 41px);
+  background-size: 160px 160px;
+  background-position: 0 0, 80px 0, 0 80px, 80px 80px;
+  overflow-x: hidden;
 }
-canvas {
+
+canvas#scene {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically center all content */
+  padding: 16px 40px;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  font-family: 'Bangers', cursive;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+/* === LEFT CONTENT === */
+header .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Bangers', cursive;
+  font-size: 22px;              /* unified font size */
+  line-height: 1.2;
+}
+
+/* === RIGHT ICON AREA === */
+header .right {
+  display: flex;
+  align-items: center;          /* center ABOUT + icon vertically */
+  justify-content: center;
+  padding-right: 10px;
+}
+
+/* === ABOUT LINK + ICON === */
+.about-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.about-text {
+  font-family: 'Bangers', cursive;
+  font-size: 22px;              /* same size as left titles */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.about-icon {
+  width: 90px;
+  height: auto;
+}
+
+
+/* ========== MAIN CONTENT ========== */
+main {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+  color: black;
+}
+
+.ellipse-box {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 100px;
+  padding: 40px 60px;
+  margin: 60px 0 60px 50px;
+  max-width: 700px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-title {
+  font-family: 'Bangers', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.project-meta {
+  font-family: 'Bangers', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.project-title {
+  font-family: 'Bangers', sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 4px;
+}
+.project-title span:nth-child(1) { color: #FF6F61; }   /* V - Coral Red */
+.project-title span:nth-child(2) { color: #FDCB6E; }   /* I - Butter Yellow */
+.project-title span:nth-child(3) { color: #6C5CE7; }   /* B - Violet Indigo */
+.project-title span:nth-child(4) { color: #00B894; }   /* E - Aqua Green */
+.project-title span:nth-child(5) { color: #FAB1A0; }   /* C - Soft Peach */
+.project-title span:nth-child(6) { color: #74B9FF; }   /* O - Sky Blue */
+.project-title span:nth-child(7) { color: #FFEAA7; }   /* D - Lemon Cream */
+.project-title span:nth-child(8) { color: #E84393; }   /* I - Raspberry Pink */
+.project-title span:nth-child(9) { color: #55EFC4; }   /* N - Mint Green */
+.project-title span:nth-child(10){ color: #FD79A8; }   /* G - Bubblegum Pink */
+
+
+
+.project-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.advisor {
+  font-family: 'Bangers', cursive;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.advisor strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
   display: block;
+  color: #000;
+  margin-top: 4px;
 }
